@@ -21,22 +21,23 @@ Control a piano with your **voice** by saying digits (0–9) or commands like `"
 
 - Python 3.7 or higher
 - Install dependencies:
-  ```bash
+```
   pip install pygame sounddevice vosk numpy
+```
+## 📁 Folder Structure
+- Place all files in the same directory:
+- voice_controlled_piano/
+- ├── background.jpg
+- ├── key0.png ... key9.png
+- ├── note0.wav ... note9.wav
+- ├── model/ (Vosk speech model folder)
+- └── voice_controlled_piano.py
 
-📁 Folder Structure
-Place all files in the same directory:
-voice_controlled_piano/
-├── background.jpg
-├── key0.png ... key9.png
-├── note0.wav ... note9.wav
-├── model/ (Vosk speech model folder)
-└── voice_controlled_piano.py
-
-▶️ How to Run
-python voice_controlled_piano.py
-
-Then speak clearly:
+## ▶️ How to Run
+```
+    python voice_controlled_piano.py
+```
+- Then speak clearly:
 "start game"
 "zero", "one", ..., "nine"
 "end game"
@@ -47,7 +48,6 @@ Then speak clearly:
 ![Piano Gameplay Screenshot 1](assets/screenshot1.png)
 ![Piano Gameplay Screenshot 2](assets/screenshot2.png)
 
-🧑‍💻 Author
-Siddhant Saxena
-B.Tech CSE, JIIT Noida
-GitHub: siddhantsaxena45 how to attach video recording or screenshots
+## 🧑‍💻 Author
+- Siddhant Saxena
+- B.Tech CSE, JIIT Noida
