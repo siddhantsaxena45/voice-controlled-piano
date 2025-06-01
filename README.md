@@ -6,6 +6,12 @@ This is a Python-based voice-controlled piano game using **Pygame** and **Vosk**
 
 Control a piano with your **voice** by saying digits (0–9) or commands like `"start game"` and `"end game"`. You can also interact using your **keyboard** or **mouse**.
 
+## Download Link
+
+You can download the file from the following link:
+
+[Download Here](https://drive.google.com/file/d/17945JuuY5-HqxBdZeItZModW5PvEoPQD/view?usp=drive_link)
+  
 ## 🚀 Features
 
 - 🎤 Voice control using Vosk + microphone
@@ -22,7 +28,7 @@ Control a piano with your **voice** by saying digits (0–9) or commands like `"
 - Python 3.7 or higher
 - Install dependencies:
 ```
-  pip install pygame sounddevice vosk numpy
+  pip install pygame sounddevice vosk
 ```
 ## 📁 Folder Structure
 - Place all files in the same directory:
