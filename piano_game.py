@@ -7,18 +7,17 @@ import json
 import threading
 import time
 
-# Initialize Pygame
 pygame.init()
 should_quit = False
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Voice-Controlled Piano")
 font = pygame.font.SysFont(None, 48)
 
-# Load background image
+
 background = pygame.image.load("background.jpg")
 background = pygame.transform.smoothscale(background, (800, 600))
 
-# Load piano key images and their rects
+
 key_images = []
 key_rects = []
 for i in range(10):
@@ -26,13 +25,13 @@ for i in range(10):
     key_images.append(image)
     key_rects.append(pygame.Rect(50 + i * 70, 300, image.get_width(), image.get_height()))
 
-# Load piano sounds
+
 sounds = []
 for i in range(10):
     sound = pygame.mixer.Sound(f"note{i}.wav")
     sounds.append(sound)
 
-# Vosk model setup
+
 model = vosk.Model("model")
 q = queue.Queue()
 
@@ -52,7 +51,7 @@ def recognize_speech():
                 result = json.loads(rec.Result())
                 text = result.get("text", "")
                 if text:
-                    print(f"Recognized voice command: {text}")  # <-- Print in terminal
+                    print(f"Recognized voice command: {text}")  
                     process_command(text)
 
 highlighted_key = -1
@@ -97,7 +96,7 @@ def process_command(command):
             play_key(num)
             pygame.time.delay(500)
 
-# Start voice thread
+
 threading.Thread(target=recognize_speech, daemon=True).start()
 
 running = True
