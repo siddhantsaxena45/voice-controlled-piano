@@ -13,10 +13,8 @@ screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Voice-Controlled Piano")
 font = pygame.font.SysFont(None, 48)
 
-
 background = pygame.image.load("background.jpg")
 background = pygame.transform.smoothscale(background, (800, 600))
-
 
 key_images = []
 key_rects = []
